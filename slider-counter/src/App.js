@@ -39,7 +39,13 @@ function Counter() {
       </p>
       <span> {date.toDateString()}</span>
       <div>
-        <button onClick={() => newstate(0)}>RESET</button>
+         <button
+          onClick={() => {
+            newstate(0);
+            newstep(1);
+          }}>
+          RESET
+        </button>
       </div>
     </div>
   );
