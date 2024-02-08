@@ -46,7 +46,7 @@ function FlashCards() {
           className={selectid === question.id ? "selected" : ""}
         >
           <p>
-            {question.id === selectid ? question.question : question.answer}
+            {question.id === selectid ? question.answer : question.question}
           </p>
         </div>
       ))}
